@@ -1,0 +1,239 @@
+ /* 001 */
+body {    
+    padding: 1%; /* задаю внутренний отступ для обертки */  
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif; /* подключаю шрифты */            
+    background: #F0F0F0 url('../img/fon_header1.jpg') center center no-repeat;  /* добавляю фон и картинку */ 
+    background-size: cover; /* масштабирую изображение с сохранением пропорций по ширине и высоте блока */
+    background-attachment: fixed; /* закрепляю background на одном месте, что бы не прокручивался */     
+}
+
+/* 010 */
+.wrapper,
+.header,
+.nav,
+.main,
+.sidebar-nav,
+.card__img-wrap,
+.footer {
+    width: 100%; /* задаю ширину */
+}
+
+/* 010 */
+.wrapper {    
+    background: #F0F0F0;  /* фон */
+}
+
+/* 010 */
+.header {    
+    padding: 6%; /* задаю внутр. отступ */
+    padding-left: 2%; /* задаю внутр. отступ с лева*/
+    background: rgb(60, 144, 239) url('../img/fon_header2.jpg'); /* задаю фон */
+    border: 1px solid #DFECF7;
+}
+
+/* 010 */
+.header__heading {
+    text-align: left; /* выравниваю текст по центру */
+    font-size: 1.8rem; /* задаю размер шрифта */
+}
+
+/* 010 */
+.nav,
+.sidebar-nav__item,
+.footer {
+    padding: 1%; /* задаю внутр. отступ */
+    padding-left: 2%; /* задаю внутр. отступ с лева*/
+}
+
+/* 010 */
+.nav,
+.footer {     
+    background: #DFECF7; /* фон */
+}
+
+/* 010 */
+.nav__link,
+.footer__link{
+    font-size: .80rem; /* задаю размер шрифта */
+    color: #551A8B;  /* задаю цвет шрифта */
+    font-weight:600;   /* задаю жирный шрифт */  
+    text-decoration: none; /* убираю подчеркивание ссылок */
+}
+
+/* 011 */
+.nav__link:hover {    
+    font-size: .90rem; /* задаю размер шрифта при наведении мышки */ 
+    transition: all .5s linear; /* подключаю изменение стиля текста */
+}
+
+/* 011 */
+.main::after {
+    content: ""; /* отменяю обтекание float элементов, что бы родитель увидел их, метод clearfix */
+    display:table;
+    clear: both;
+}
+
+/* 010 */
+.sidebar {
+    width: 19%; /* задаю ширину */    
+    margin-left: 1%; /* задаю внешний отступ слева */
+    margin-top: 2.8%;      
+    background: #edebeb;    
+}
+
+/* 010 */
+.sidebar,
+.card__item {  
+    padding: 1%;    
+    float: left; /* использую технологию float, чтобы элементы расположились рядом */     
+    border: 1px solid rgb(203, 203, 203); /* задаю рамку */ 
+    border-radius: 2%; /* скругляю углы */
+}
+
+/* 010 */
+.sidebar__heading {
+    margin: 20px 2px;    
+    color: rgb(60, 144, 239);    
+    font-size: .90rem;
+    font-weight: 600;
+}
+
+/* 010 */
+.sidebar-nav__item {
+    margin: 15px 2px;    
+}
+
+/* 010 */
+.sidebar-nav__link {
+    font-size: .90rem;
+    color: rgb(60, 144, 239);         
+    text-decoration: none;
+}
+
+/* 011 */
+.sidebar-nav__link:hover {    
+    text-decoration: underline;   
+    transition: all .5s linear;
+}
+
+/* 010 */
+.main__wrapper {
+    width: 80%;      
+    padding: 2%;    
+    float: left;
+}
+
+.card {    
+    margin: 0 auto;
+}
+
+/* 011 */
+.card::after {
+    content: "";
+    display:table;
+    clear: both;
+}
+
+/* 010 */
+.card__item {
+    width: 31%;
+    margin: 1.15%;    
+    background: #e0e0e0;    
+}
+
+/* 011 */
+.card__item:hover {
+    background: #f5f4f4;
+    border: 1px solid rgb(203, 203, 203);       
+    transition: 0.5s;
+}
+
+/* 010 */
+.card__img-wrap {    
+    height: 210px; 
+    position:relative;   
+}    
+
+/* 010 */
+ .card__img {
+    display: block;    
+    width: auto; 
+    max-width: 80%;
+    margin: 0 auto; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+ }
+
+ /* 010 */
+ .card__heading {
+    margin: 20px 8px;
+    color: rgb(60, 144, 239);
+    text-align: center;
+    font-size: .90rem;
+ }
+
+/* 010 */
+.card__desc {
+    font-size: .75rem;
+}
+
+/* 010 */
+.card__price {
+    margin: 10%;
+    font-size: 1rem;       
+}
+
+/* 010 */
+.card__btn-wrap {
+    margin: 0 auto;
+    width: 50%;
+    padding: 4% 6%;    
+    text-align: center;
+    background: #9c2024;
+    border: 1px solid rgb(143, 16, 16);      
+}
+
+/* 011 */
+.card__btn-wrap:hover {
+    background: #771a1d;
+    border: 1px solid rgb(87, 8, 8);    
+}
+
+/* 010 */
+.card__btn {    
+    display: block;
+    font-size: .80rem;
+    color: #fff;       
+    text-decoration: none;
+}
+
+/* 011 */
+.card__btn:hover {
+    text-decoration: underline;      
+}
+
+/* 010 */
+.card__footer {
+    margin-top: 10%;
+    font-size: .60rem;
+    text-align: center;
+}
+
+/* 010 */
+.footer__link {
+    display: block;     
+    text-align: right;   
+}        
+
+/* 011 */
+.footer__link:hover {    
+    font-size: .90rem;   
+    transition: all .5s linear;
+}
+
+/* 010 */
+.footer__bottom {
+    font-size: .60rem;
+}
