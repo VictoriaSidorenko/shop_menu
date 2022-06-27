@@ -36,40 +36,47 @@ body {
     font-size: 1.8rem; /* задаю размер шрифта */
 }
 
+/* 010 */
 .nav {
-    font-size: 0;    
+    font-size: 0;    /* убираю отступы, которые появляються из-за использования inline-block */
 }
 
+/* 010 */
 .nav__item {
-    display: inline-block;
-    position: relative;
-    font-size: 1rem;    ;
-}
+    display: inline-block; /* задаю отображение блочных элементов в строку */
+    position: relative; /* задаю позиционирование */
+    font-size: 1rem;   
+}  
 
+/* 030 */
 .nav__item:hover .dropdown {
-    background-color: #DFECF7;
+    background-color: #DFECF7; /* задаю стили для dropdown при наведении на меню */
     display: block;
 }
 
+/* 010 */
 .nav__link, 
 .dropdown__link {
-    display: block;
+    display: block; /* задаю отображение строчных элементов как блок */
     padding: 10px;
-    text-decoration: none;   
+    text-decoration: none;  /* убираю подчеркивание ссылок */
 }
 
+/* 010 */
 .dropdown {
-    position: absolute;
-    display: none;
+    position: absolute; /* задаю абсолютное позиционирование */ 
+    display: none; /* не отображать */
 }
 
+/* 010 */
 .dropdown__item {
-    display: block;          
+    display: block;   /* задаю отображение элементов как блок */       
     outline: 1px solid #d9ebfa;
 }
 
+/* 010 */
 .nav {
-    margin-top: 30px;    
+    margin-top: 30px;  /* задаю внешний отступ вверху */
 }
 
 /* 010 */
@@ -87,7 +94,7 @@ body {
 
 /* 010 */
 .nav__link,
-.dropdown__item,
+.dropdown__link,
 .footer__link{
     font-size: .80rem; /* задаю размер шрифта */
     color: #551A8B;  /* задаю цвет шрифта */
