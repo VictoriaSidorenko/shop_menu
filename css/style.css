@@ -26,7 +26,7 @@ body {
 /* 010 */
 .header {    
     padding: 6%; /* задаю внутр. отступ */
-    padding-left: 2%; /* задаю внутр. отступ с лева*/
+    padding-left: 2%; /* задаю внутр. отступ слева*/
     background: rgb(60, 144, 239) url('../img/fon_header2.jpg'); /* задаю фон */
     border: 1px solid #DFECF7;
 }
@@ -35,6 +35,39 @@ body {
 .header__heading {
     text-align: left; /* выравниваю текст по центру */
     font-size: 1.8rem; /* задаю размер шрифта */
+}
+
+.nav {
+    font-size: 0;    
+}
+
+.nav__item {
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;    ;
+}
+
+.nav__item:hover .dropdown {
+    background-color: aqua;
+    display: block;
+}
+
+.nav__link, 
+.dropdown__link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    outline: 1px solid crimson;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+}
+
+.dropdown__item {
+    display: block;    
+    outline: 1px solid rgb(36, 158, 128);
 }
 
 /* 010 */
